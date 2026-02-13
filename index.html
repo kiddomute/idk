@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Render Network (RNDR) | AI Mining Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="https://rendernetwork.com/_next/image?url=%2Flogo.svg&w=256&q=75" alt="Render Network logo" class="brand-logo" />
+      <div>
+        <h1>Render Network (RNDR)</h1>
+        <p>AI Mining Challenge Demo Platform</p>
+      </div>
+    </div>
+    <a href="#whitepaper" class="button button-outline">View White Paper</a>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <h2>AI-Enhanced Mining Dashboard (Prototype)</h2>
+      <p>
+        This interface is a <strong>non-custodial prototype/demo</strong> for product design and competition presentation.
+        It does <strong>not</strong> process real funds, wallets, or blockchain withdrawals.
+      </p>
+      <div class="risk-banner">
+        ⚠️ High-yield crypto promises are risky. Use this page only for mock demonstrations.
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Deposit Simulator</h3>
+      <div class="token-grid">
+        <button class="token active" data-token="USDT">
+          <img src="assets/usdt.svg" alt="USDT" /> USDT
+        </button>
+        <button class="token" data-token="BTC">
+          <img src="assets/btc.svg" alt="BTC" /> BTC
+        </button>
+        <button class="token" data-token="ETH">
+          <img src="assets/eth.svg" alt="ETH" /> ETH
+        </button>
+      </div>
+
+      <label for="amount">Deposit amount</label>
+      <input id="amount" type="number" min="0" placeholder="Enter amount" />
+
+      <div class="stats">
+        <div>
+          <small>Selected token</small>
+          <strong id="selectedToken">USDT</strong>
+        </div>
+        <div>
+          <small>Projected cycle return (3 days @ 4%)</small>
+          <strong id="projectedReturn">0.00</strong>
+        </div>
+        <div>
+          <small>Projected payout after 3 days</small>
+          <strong id="projectedPayout">0.00</strong>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="button" id="simulateDeposit">Simulate Deposit</button>
+        <button class="button button-outline" id="simulateWithdraw">Simulate Instant Withdrawal</button>
+      </div>
+      <p id="status" class="status">No transaction simulated yet.</p>
+    </section>
+
+    <section id="whitepaper" class="card">
+      <h3>RNDR White Paper (Competition Edition)</h3>
+      <p>
+        <strong>Note:</strong> This content is fictional branding for a hackathon-style presentation and is not affiliated with real organizations.
+      </p>
+      <ol>
+        <li>
+          <strong>Vision</strong> — RNDR imagines a hybrid AI+mining control layer that optimizes hash routing, cost forecasting, and treasury telemetry.
+        </li>
+        <li>
+          <strong>System Format</strong> — Users select BTC/USDT/ETH for simulated deposits and view modeled cycle outputs.
+        </li>
+        <li>
+          <strong>Reward Model (Simulation)</strong> — Demonstrates a 4% three-day cycle in UI calculations only.
+        </li>
+        <li>
+          <strong>Instant Liquidity Concept</strong> — Demonstrates immediate mock withdrawals through local state updates.
+        </li>
+        <li>
+          <strong>AI Sponsorship Narrative (Fictional)</strong> — The prototype presentation references imagined support from notable AI ecosystems to frame competitive storytelling.
+        </li>
+        <li>
+          <strong>Compliance & Ethics</strong> — Any production use requires licensing, legal review, KYC/AML controls, custodial safety, and full risk disclosure.
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

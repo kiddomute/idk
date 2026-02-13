@@ -1,0 +1,47 @@
+:root {
+  --bg: #0b1220;
+  --card: #131f35;
+  --text: #e8edf8;
+  --accent: #5c8dff;
+  --muted: #9fb0d1;
+  --danger: #eab308;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #122241, var(--bg));
+  color: var(--text);
+}
+.topbar, main { max-width: 920px; margin: 0 auto; padding: 1rem; }
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.brand { display: flex; gap: 0.75rem; align-items: center; }
+.brand-logo { width: 42px; height: 42px; border-radius: 50%; background: #fff; }
+h1 { margin: 0; font-size: 1.15rem; }
+.brand p { margin: 0; color: var(--muted); }
+.card {
+  background: rgba(19, 31, 53, 0.9);
+  border: 1px solid rgba(92, 141, 255, 0.25);
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.hero p { color: var(--muted); }
+.risk-banner { background: rgba(234, 179, 8, 0.15); border: 1px solid rgba(234, 179, 8, 0.45); padding: 0.65rem; border-radius: 10px; color: #fde68a; }
+.token-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-bottom: 0.8rem; }
+.token { border: 1px solid #38518b; border-radius: 10px; background: #1b2b4d; color: var(--text); padding: 0.55rem; cursor: pointer; }
+.token img { width: 18px; vertical-align: middle; margin-right: 0.35rem; }
+.token.active { border-color: var(--accent); background: #203765; }
+input { width: 100%; margin-top: 0.35rem; margin-bottom: 1rem; padding: 0.65rem; border-radius: 10px; border: 1px solid #32508d; background: #0f1b34; color: var(--text); }
+.stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.5rem; }
+.stats div { background: #0f1b34; border: 1px solid #2b436f; border-radius: 10px; padding: 0.65rem; }
+small { color: var(--muted); display: block; margin-bottom: 0.2rem; }
+.actions { margin-top: 1rem; display: flex; gap: 0.5rem; }
+.button { background: var(--accent); color: #fff; border: none; border-radius: 10px; padding: 0.55rem 0.85rem; text-decoration: none; cursor: pointer; }
+.button-outline { background: transparent; border: 1px solid #5881d6; }
+.status { color: #9fdca5; min-height: 1.5rem; }
+ol { color: var(--muted); }
+@media (max-width: 700px) {
+  .stats { grid-template-columns: 1fr; }
+  .topbar { flex-direction: column; align-items: flex-start; }
+}
